@@ -1,0 +1,2 @@
+命令行输入 npm install
+就会自动安装package.js中dependencies属性指定的包
