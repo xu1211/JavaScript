@@ -18,9 +18,9 @@ eventEmitter.addListener('connection', listener1);
 // 监听 connection 事件，处理函数为 listener2
 eventEmitter.on('connection', listener2);
 
-//查看有几个监听器
+//查看connection事件有几个监听器
 var eventListeners = eventEmitter.listenerCount('connection');
-console.log("现在有" + eventListeners + " 个监听器监听连接事件。");
+console.log("connection事件现在有" + eventListeners + " 个监听器监听连接事件。");
 
 // 触发 connection 事件 
 eventEmitter.emit('connection');
@@ -33,6 +33,6 @@ console.log("listener1 不再受监听。");
 eventEmitter.emit('connection');
 
 eventListeners = eventEmitter.listenerCount('connection');
-console.log("现在有" + eventListeners + " 个监听器监听连接事件。");
+console.log("connection事件现在有" + eventListeners + " 个监听器监听连接事件。");
 
 console.log("程序执行完毕。");
